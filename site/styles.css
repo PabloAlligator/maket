@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffc5f8;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdeea6;
+}
+
+@media screen and (max-width: 990px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aside {
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1440px) {
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .aside {
+        width: 33.3%;
+        font-style: italic;
+        color: red;
+        font-size: 3rem;
+    }
+
+    .main {
+        width: 66.7%;
+        color: blue;
+        font-style: italic;
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 1441px) {
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .aside {
+        width: 25%;
+        color: rgb(182, 136, 136);
+        font-size: 4rem;
+        font-style:oblique;
+        font-weight: bold;
+    }
+
+    .main {
+        width: 75%;
+        color: rgb(80, 80, 176);
+        font-style:oblique;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+}
